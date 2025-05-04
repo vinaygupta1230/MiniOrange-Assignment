@@ -1,5 +1,5 @@
 import express from 'express';
-import { getUserData } from '../controllers/userController.js';
+import { getUserData, UpdateUserData } from '../controllers/userController.js';
 import userAuth from '../middleware/userAuth.js';
 
 

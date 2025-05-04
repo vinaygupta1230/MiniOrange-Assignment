@@ -26,7 +26,7 @@ export const getUserData = async(req, res) =>{
 
 export const UpdateUserData = async (req, res) => {
     try {
-        const { userid, newName } = req.body;  // Assuming the new name is passed in the request body
+        const { userid, newName } = req.body;
 
         if (!newName) {
             return res.json({ success: false, message: "New name is required" });

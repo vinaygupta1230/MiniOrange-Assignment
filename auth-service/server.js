@@ -5,7 +5,7 @@ import 'dotenv/config'
 import cookieParser from 'cookie-parser';
 import connectDB from './config/mongodb.js';
 import authRouter from './routes/authRoutes.js'
-import userRoute from './routes/userRoutes.js';
+// import userRoute from './routes/userRoutes.js';
 // const authRoutes = require('./routes/authRoutes');
 
 const app = express();
@@ -20,7 +20,7 @@ app.use(cors({credentials : true}))
 
 app.get('/', (req, res) => res.send("API working "));
 app.use('/api/auth', authRouter);
-app.use('/api/user', userRoute);
+// app.use('/api/user', userRoute);
 
 // mongoose.connect(process.env.MONGO_URI || "", () => {
 //   console.log('Connected to MongoDB');
