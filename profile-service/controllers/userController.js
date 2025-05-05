@@ -38,7 +38,6 @@ export const UpdateUserData = async (req, res) => {
             return res.json({ success: false, message: "User not found" });
         }
 
-        // Update the user's name
         user.name = newName;
         await user.save();
 

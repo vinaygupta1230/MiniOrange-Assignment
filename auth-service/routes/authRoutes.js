@@ -1,14 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-// const authController = require('../controllers/authController');
-
-// router.post('/register', authController.register);
-// router.post('/login', authController.login);
-
-// // TODO: Add `/auth/google` and `/auth/facebook`
-
-// module.exports = router;
-
 import express from 'express';
 import { facebookCallback, getFacebookAuthURL, getGoogleAuthURL, googleCallback, isAuthenticated, login, logout, register, sendVerifyOtp, verifyEmail } from '../controllers/authController.js';
 import userAuth from '../middleware/userAuth.js';
